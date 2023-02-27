@@ -1,3 +1,4 @@
+<?php ?>
 <div class="container-fluid" id="hero-header">
 	<div class="row">
 		<h2>خود ساختگی ، کسب تجربه ، ورود به بازار کار</h2>
