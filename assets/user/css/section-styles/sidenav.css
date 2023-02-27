@@ -1,0 +1,36 @@
+.user{
+    position: relative;
+    background: #2d586b;
+    height: 170px;
+}
+.user-avatar-side-nav{
+    position: absolute;
+    top: 56%;
+    right: 30%;
+}
+.welcome{
+    color: #ffffff;
+    padding-top: 20px;
+}
+.welcome div{
+    margin-bottom: 10px;
+}
+#slide-list{
+    margin-top: 36px;
+}
+#slide-list li{
+    padding: 5px 20px;
+    border-bottom: 1px solid #efefef;
+}
+#slide-list li i{
+    vertical-align: -6px;
+    margin-left: 7px;
+    color: #c3c3c3;
+}
+.badge-slide-nav{
+    float: left;
+    background: #8db9ff;
+}
+#exit-icon{
+    content: #ff4843;
+}

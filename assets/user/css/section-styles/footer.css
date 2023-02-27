@@ -1,0 +1,52 @@
+#fooer-section p{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+#aboutus-footer{
+
+    background: #609ae5;
+}
+#sign-footer{
+    background: #8BC34A;
+}
+#comment-fooer{
+    background: #E91E63;
+}
+.aboutus-text{
+    color: #000!important;
+    text-align: justify!important;
+    padding: 20px!important;
+}
+#nemad-style{
+    padding: 5px;
+    text-align: center;
+}
+.copy-right-text{
+    margin: 0;
+    text-align: center!important;
+    background:#332f2f ;
+    border-top: 1px solid #efefef;
+    padding: 15px!important;
+}
+.copy-right-text i{
+    vertical-align: -5px;
+    margin-left: 6px;
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+.slider-random-comment{
+    color: #000!important;
+    text-align: right!important;
+    line-height: 28px;
+}
+#footer-comment-slider{
+    padding-top:10px ;
+}
+#custom-footer-row{
+    margin: 0;
+}
