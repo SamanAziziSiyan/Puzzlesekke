@@ -1,0 +1,128 @@
+@import "section-styles/top-menu.css";
+@import "section-styles/hero-header.css";
+@import "section-styles/slider-info-section.css";
+@import "section-styles/cursor-sidebar.css";
+@import "section-styles/newsletter.css";
+@import "section-styles/footer.css";
+@import "section-styles/sidenav.css";
+@import "section-styles/Login-Registration.css";
+@import "section-styles/Comments.css";
+@import "section-styles/profile.css";
+
+@font-face {
+    font-family: 'isans' ;
+    src: url('../../user/fonts/isans.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../user/fonts/maticons.woff) format('woff');
+
+
+}
+
+@font-face {
+    font-family: 'glyphicons' ;
+    src: url('../../user/fonts/glyphicons-halflings-regular.woff') format('woff');
+
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: rtl;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+*, body {
+    font-family: isans;
+
+}
+
+body {
+    background: url("../../user/img/bg-pattern.gif") repeat;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.custom-vote-ads-section {
+    margin-top: 40px;
+
+}
+
+div.ads img {
+    width: 100%;
+}
+
+
+#wrapper-margin-top {
+    margin-top: 40px;
+}
+
+#wrapper-margin-bottom {
+    margin-bottom: 40px;
+}
+
+#tgju a {
+    display: none;
+}
+
+div#tgju {
+    position: relative;
+    top: 30px;
+}
+
+.data-table thead th {
+    background-color: #446cb3 !important;
+}
+
+.data-table tbody {
+    background-color: #ffffff;
+}
+
+.data-table {
+    border: 1px solid #ffffff !important;
+}
+
+#tgju table.data-table {
+    padding: 0 !important;
+    border-top: 0 !important;
+    border-color: #ffffff !important;
+}
+
+
+.single-landing-layer {
+    background: url("../img/slide.jpg") no-repeat scroll center center/cover;
+    min-height: 200px;
+    border-bottom: 5px solid #8da3ff;
+}
+h4.single-title {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 0;
+    margin: 0px;
+}
+
+

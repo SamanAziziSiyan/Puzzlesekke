@@ -1,0 +1,45 @@
+#hero-header{
+    background: url("../../img/slide.jpg") repeat scroll center center/cover;
+    min-height: 400px;
+}
+#hero-header h2{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    width: 100%;
+}
+.text .val {
+    font-size: 50px;
+}
+.text .type-time {
+    font-size: 20px;
+}
+/*search filed*/
+#custom-row-search-field{
+    margin: 46px;
+}
+#custom-row-statics{
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#custom-row-statics span{
+    display: block;
+}
+#custom-row-statics i{
+    font-size: 75px;
+}
