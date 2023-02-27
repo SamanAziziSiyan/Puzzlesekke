@@ -10,4 +10,4 @@ Last Version Will not be commited to this repositroy due to company Copyrights.
 
 # More
 
-You can use this project for learning porpuses and you can expand this project and add your own custom features.
+You can use this project for learning purposes and you can expand this project and add your own custom features.
