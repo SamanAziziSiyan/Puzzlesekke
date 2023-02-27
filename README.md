@@ -8,7 +8,7 @@ Coin shop using php for backend and etc
 Last Version Will not be commited to this repositroy due to company Copyrights.
 
 # Requisite
-You need to install and copy CKEditor plugin into /Assets/Styles/Panel/ Folder and Name it ckeditor 
+You need to install and copy CKEditor plugin into /assets/Panel/ Folder and Name it ckeditor 
 in Order to be able to run the project panel admin properly.
 
 # More
