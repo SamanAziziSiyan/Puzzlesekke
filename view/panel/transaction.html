@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>داشبورد </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" href="css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/persianDatepicker-lightorang.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!--   <link href="css/layout2.css" rel="stylesheet" />-->
+
+    <script src="js/jquery.min.1.11.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <!--    behzadi date picker-->
+    <script src="js/persianDatepicker.js"></script>
+    <script src="js/admin-custom.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+<body class="top-body " >
+
+<!-- MAIN WRAPPER -->
+<div id="wrap" style="position: relative;" >
+    <!-- HEADER SECTION -->
+    <div id="top">
+        <nav class="navbar navbar-default navbar-fixed-top custom-navbar-default ">
+            <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
+                <i class="icon-align-justify"></i>
+            </a>
+            <!-- LOGO SECTION -->
+            <header class="navbar-header">
+
+                <a href="index.php" class="navbar-brand">
+                    <img src="img/7l.png" alt="" height="30" />
+                    <span class="site-title">پنل مدیریت</span>
+                </a>
+            </header>
+            <!-- END LOGO SECTION -->
+            <ul class="nav navbar-top-links navbar-left">
+                <!-- MESSAGES SECTION -->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="label label-success">1</span>    <i class="icon-envelope-alt"></i>&nbsp; <i class="icon-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages" style="padding: 0">
+
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <img class="img-circle" width="35" height="35" src="img/gravatar.png">
+                                    <span style="font-size: 12px">وحید صالحی</span>
+                                    <span class="pull-left text-muted" style="margin-top: 10px">
+                                            <label class="label label-danger" style="font-size: 8px">مهم</label>
+                                        <!--<label class="label label-info" style="font-size: 8px">1</label>-->
+                                </div>
+                                <div style="margin: 10px 0;font-size: 13px;color: #aea5a9">
+                                    <br />
+                                </div>
+                            </a>
+                        </li>
+
+                        <div class="alert alert-danger text-center" style="margin: 0!important;font-size: 13px">در حال حاضر تیکتی ثبت نکرده اید<br><br><a href="create_ticket.html">ارسال تیکت</a></div>
+
+                    </ul>
+                </li>
+                <!--END MESSAGES SECTION -->
+
+                <!--TASK SECTION -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="label label-danger">5</span>   <i class="icon-tasks"></i>&nbsp; <i class="icon-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong> دوره آموزشی برنامه نویسی شی گرا </strong>
+                                        <span class="pull-left text-muted">40% تکمیل شده</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% تکمیل شده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>دوره آموزشی فتوشاپ </strong>
+                                        <span class="pull-left text-muted">20% تکمیل شده</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% تکمیل شده</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong> دوره آموزشی طراحی وب </strong>
+                                        <span class="pull-left text-muted">60% تکمیل شده</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% پیشرفت</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong> دوره آموزشی فریم ورک بوت استرپ ۴ </strong>
+                                        <span class="pull-left text-muted">80% تکمیل شده</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">55% تکمیل شده </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong> دوره آموزشی Flex Box و CSS Grid</strong>
+                                        <span class="pull-left text-muted">80% تکمیل شده</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% تکمیل شده </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <i class="icon-angle-left"></i>
+                                <strong>مشاهده همه تسک ها</strong>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <!--END TASK SECTION -->
+
+                <!--ALERTS SECTION -->
+
+                <!-- END ALERTS SECTION -->
+
+                <!--ADMIN SETTINGS SECTIONS -->
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user "></i>&nbsp; <i class="icon-chevron-down "></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="icon-user"></i> مشاهده پروفایل </a>
+                        </li>
+                        <li><a href="#"><i class="icon-gear"></i> تنظیمات </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="logout.php"><i class="icon-signout"></i> خروج </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <!--END ADMIN SETTINGS -->
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- END HEADER SECTION -->
+
+
+
+    <!-- RIGHT SIDEBAR-->
+
+    <div id="right" >
+        <div class="user-image-status">
+            <img style="margin: 10px auto" class="img-circle img-responsive" width="80" height="80"
+                 src="img/vahid.jpeg"/>
+            <p style="text-align: center;color: #fff">وحید صالحی</p>
+            <div class="btn btn-success btn-xs btn-circle" style="margin-right: 74px;margin-bottom: 20px;width: 16px;height: 16px"> <span style="margin-right: 16px;
+    font-size: 13px;
+    font-weight: bold;">آنلاین</span></div>
+        </div>
+
+
+
+
+        <ul id="menu" class="collapse">
+
+
+            <li class="panel active">
+                <a href="index.php" >
+                    <i class="icon-table"></i> داشبورد
+
+
+                </a>
+            </li>
+
+
+
+            <li class="panel ">
+                <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#post-management">
+                    <i class="icon-tasks"> </i>مدیریت مطالب
+
+                    <span class="pull-left">
+                        <i class="icon-angle-down"></i>
+                        </span>
+
+                </a>
+                <ul class="collapse" id="post-management">
+                    <li class=""><a href="allpost.php"><i class="icon-angle-left"></i> کل مطالب </a></li>
+                    <li class=""><a href="new-post.php"><i class="icon-angle-left"></i> افزودن نوشته </a></li>
+                    <li class=""><a href="cats.php"><i class="icon-angle-left"></i> دسته ها </a></li>
+                    <li class=""><a href="create_series.html"><i class="icon-angle-left"></i>دوره های آموزشی</a></li>
+                </ul>
+            </li>
+
+            <li class="panel ">
+                <a href="comments.php" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
+                    <i class="icon-comments-alt"></i> دیدگاه ها
+
+                    <span class="pull-left">
+                                       <i class="icon-angle-down"></i>
+                        </span>
+                    &nbsp; <span class="label label-success">0</span>&nbsp;
+                </a>
+            </li>
+
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#progress_course">
+                    <i class="icon-table"></i> پیشرفت دوره ها
+
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                    &nbsp; <span class="label label-info">6</span>&nbsp;
+                </a>
+                <ul class="collapse" id="progress_course">
+                    <li><a href="create_progress.php"><i class="icon-angle-left"></i> ایجاد پیشرفت دوره </a></li>
+                    <li><a href="manage_progress.php"><i class="icon-angle-left"></i> مدیریت پیشرفت دوره ها </a></li>
+
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#chart-nav">
+                    <i class="icon-gears"></i>مدیریت منوها
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="chart-nav">
+                    <li><a href="create_menu.html"><i class="icon-angle-left"></i> ایجاد منو  </a></li>
+                    <li><a href="menus.html"><i class="icon-angle-left"></i> مدیریت منوها</a></li>
+                </ul>
+            </li>
+
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#DDL-nav">
+                    <i class=" icon-user"></i>      پروفایل کاربری
+
+                    <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="DDL-nav">
+                    <li><a href="profile.html"><i class="icon-angle-left"></i>شناسنامه من </a></li>
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#transaction">
+                    <i class=" icon-dollar"></i> مدیریت تراکنش ها
+                    <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="transaction">
+                    <li><a href="transaction.html"><i class="icon-angle-left"></i> مشاهده تراکنش ها </a></li>
+
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#tickets">
+                    <i class="icon-ticket"></i>مدیریت تیکت ها
+
+                    <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                        </span>
+
+                </a>
+                <ul class="collapse" id="tickets">
+                    <li><a href="tickets.html"><i class="icon-angle-left"></i> تیکت های شما  </a></li>
+
+                    <li><a href="tickets_admin.html"><i class="icon-angle-left"></i> مدیریت تیکت های کاربران </a></li>
+
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#discount">
+                    <i class="icon-shopping-cart"></i>مدیریت تخفیف ها
+
+                    <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                        </span>
+
+                </a>
+                <ul class="collapse" id="discount">
+                    <li><a href="create-discount.html"><i class="icon-angle-left"></i> افزودن تخفیف جدید  </a></li>
+
+                </ul>
+            </li>
+
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#user-management">
+                    <i class="icon-user"></i>   مدیریت کاربران
+
+                    <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                        </span>
+
+                </a>
+                <ul class="collapse" id="user-management">
+                    <li><a href="create-user.php"><i class="icon-angle-left"></i> ایجاد کاربر جدید </a></li>
+                    <li><a href="all-users.php"><i class="icon-angle-left"></i> ویرایش کاربران</a></li>
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#createmenu">
+                    <i class="icon-gears"></i> تنظیمات قالب
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="createmenu">
+                    <li><a href="#"><i class="icon-angle-left"></i> اعلانات </a></li>
+                    <li><a href="#"><i class="icon-angle-left"></i>پیام ها</a></li>
+                    <li><a href="#"><i class="icon-angle-left"></i>درگاه بانک </a></li>
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#ads">
+                    <i class="icon-gears"></i> مدیریت تبلیغات
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="ads">
+                    <li><a href="ads.php"><i class="icon-angle-left"></i> ایجاد تبلیغ  </a></li>
+
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#logs">
+                    <i class="icon-gears"></i> مدیریت رخدادها
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="logs">
+                    <li><a href="logs.html"><i class="icon-angle-left"></i> رخدادها (logs)  </a></li>
+                    <li><a href="blacklist.php"><i class="icon-angle-left"></i>لیست سیاه (Black List)</a></li>
+
+                </ul>
+            </li>
+            <li class="panel">
+                <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#polls">
+                    <i class="icon-gears"></i> نظرسنجی
+                    <span class="pull-left">
+                          <i class="icon-angle-down"></i>
+                        </span>
+                </a>
+                <ul class="collapse" id="polls">
+                    <li><a href="poll.php"><i class="icon-angle-left"></i>نظرسنجی فعال</a></li>
+                    <li><a href="create_poll.html"><i class="icon-angle-left"></i>مدیریت نظرسنجی</a></li>
+
+                </ul>
+            </li>
+            <!-- <li class="panel">
+                 <a href="javascript:" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#charts">
+                     <i class="icon-gears"></i>نمودارها
+                     <span class="pull-left">
+                           <i class="icon-angle-down"></i>
+                         </span>
+                 </a>
+                 <ul class="collapse" id="charts">
+                     <li><a href="chart.php"><i class="icon-angle-left"></i>نمودارانتشار مطالب</a></li>
+                     <li><a href="create_poll.html"><i class="icon-angle-left"></i>مدیریت نظرسنجی</a></li>
+
+                 </ul>
+             </li>-->
+        </ul>
+
+    </div>
+    <!--END  RIGHT SIDEBAR-->
+
+
+    <!--PAGE CONTENT -->
+    <div id="content">
+        <div class="inner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="page-title">لیست تراکنش ها</h4>
+                </div>
+            </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel box box-info">
+                        <div class="panel-heading">
+                            <ul class="list-inline user-page-admin" style="position: relative">
+                                <li></li>
+                                <li style="float: left"><button href="#" class="label label-info">چاپ</button></li>
+                                <form method="post">
+                                    <li style="float: left"><button class="label label-danger" type="submit" name="del-all" style="position: absolute;top: 0px;left: 45px;">حذف کلی</button> </li>
+                            </ul>
+
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th><input type="checkbox" class="select-all"></th>
+                                        <th>شماره سفارش</th>
+                                        <th>شماره تراکنش</th>
+                                        <th>تاریخ پرداخت</th>
+                                        <th>زمان پرداخت</th>
+                                        <th>نام کاربری</th>
+                                        <th>ایمیل</th>
+                                        <th>مبلغ</th>
+                                        <th>وضعیت</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <th><input type="checkbox" class="checkbox" name="checkbox"value=""></th>
+                                            <th>1234567890</th>
+                                            <th>0123456789</th>
+                                            <th>1396-05-21</th>
+                                            <th>22:30</th>
+                                            <th>master</th>
+                                            <th>example@gmail.com</th>
+                                            <th> 55000 تومان</th>
+                                            <th>   پرداخت شده
+                                            </th>
+                                            <th>
+                                                <a href="#" class="label label-danger">حدف</a>
+                                                <a href="#" class="label label-success">ویرایش</a>
+                                            </th>
+                                        </tr>
+
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--END PAGE CONTENT -->
+
+    <!-- RIGHT STRIP  SECTION -->
+
+    <!-- END RIGHT STRIP  SECTION -->
+</div>
+
+<!--END MAIN WRAPPER -->
+
+<!-- FOOTER -->
+<div class="clearfix"></div>
+<div class="container-fluid" id="footer">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <p>کلیه حقوق سایت متعلق به <a href="http://www.7learn.com">سون لرن</a> می باشد.</p>
+
+        </div>
+    </div>
+</div>
+<!--END FOOTER -->
+
+
+<!-- GLOBAL SCRIPTS -->
+
+<!-- END GLOBAL SCRIPTS -->
+
+<!-- PAGE LEVEL SCRIPTS -->
+
+
+<!-- END PAGE LEVEL SCRIPTS -->
+
+
+</body>
+
+<!-- END BODY -->
+</html>
