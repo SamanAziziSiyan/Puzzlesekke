@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <?php
 	$query = null;
 	if (isset($_POST['btn_submit'])) {

@@ -1,4 +1,4 @@
-
+<?php # This is a PHP File - github please detect it correctly ?>
 <div class="container-fluid padding-reset" id="fooer-section">
 	<div class="row" id="custom-footer-row">
 		<div class="col-sm-12 col-md-4 col-lg-4 padding-reset">

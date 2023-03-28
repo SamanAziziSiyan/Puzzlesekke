@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <div class="container-fluid wrapper-margin-top"
      id="newsletter-section">
 	<div class="row">

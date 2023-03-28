@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <!--Model Config-->
 <?php include "init.php";?>
 <!DOCTYPE html>

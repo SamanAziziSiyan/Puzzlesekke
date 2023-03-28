@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <div id="slide-nav">
 	<div class="user">
 		<img class="img-circle user-avatar-side-nav" src="assets/user/img/gravatar.png" width="100" height="100">

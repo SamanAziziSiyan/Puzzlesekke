@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <div class="container-fluid" id="social-container">
 	<div class="row">
 		<div class="col-sm-12 col-md-6 col-lg-6 hidden-xs">

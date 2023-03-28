@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <div id="content">
     <div class="inner" style="min-height: 300px;">
         <div class="row">

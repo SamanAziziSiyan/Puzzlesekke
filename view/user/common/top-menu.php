@@ -1,3 +1,4 @@
+<?php # This is a PHP File - github please detect it correctly ?>
 <nav class="navbar navbar-default" id="navbar-custom">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
