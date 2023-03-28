@@ -1,6 +1,15 @@
+<?php
+
+$poll_options = [
+	0 => 'عالی است',
+	1 => 'مزخرف است',
+	2 => 'بد نیست'
+];
+?>
+?>
 <div class="container" id="custom-slider-info-container">
-	
-	
+
+
 	<div class="row">
 		<div class="col-sm-4 col-md-4 col-lg-4" id="info-section">
 			<div class="info-box">
@@ -30,9 +39,9 @@
 					<span class="info-date">1396-09-15<i class="material-icons">date_range</i></span>
 				</div>
 			</div>
-		
+
 		</div>
-		
+
 		<div class="col-sm-8 col-md-8 col-lg-8">
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<!--slider-indicators-->
@@ -54,7 +63,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 		</div>
 	</div>
 	<div class="row">
@@ -67,15 +76,15 @@
 				<div class="vote">
 					<div class="alert alert-danger text-center">نظرتون در مورد این سایت چیست؟</div>
 					<form>
-						<label class="label-container">عالی است
-							<input type="radio" name="radio" checked="checked">
+						<label class="label-container">
+							<input type="radio" name="radio" checked="checked"><?php echo $poll_options[0]; ?>
 							<span class="checkmark"></span>
 						</label>
-						<label class="label-container">مزخرف است
+						<label class="label-container"><?php echo $poll_options[1]; ?>
 							<input type="radio" name="radio">
 							<span class="checkmark"></span>
 						</label>
-						<label class="label-container">بدک نیست
+						<label class="label-container"><?php echo $poll_options[2]; ?>
 							<input type="radio" name="radio">
 							<span class="checkmark"></span>
 						</label>
@@ -83,7 +92,7 @@
 							<input type="submit" class="btn btn-success btn-sm" value="ثبت رای">
 						</div>
 					</form>
-				
+
 				</div>
 			</div>
 			<!--ads section-->
@@ -93,22 +102,22 @@
 			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="custom-vote-ads-section">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="ads text-center">
-						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads"/></a>
+						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads" /></a>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="ads text-center">
-						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads"/></a>
+						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads" /></a>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="ads text-center">
-						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads"/></a>
+						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads" /></a>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 					<div class="ads text-center">
-						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads"/></a>
+						<a href="#"><img class="img-responsive" src="assets/user/img/ads-banner.jpg" alt="ads" /></a>
 					</div>
 				</div>
 			</div>

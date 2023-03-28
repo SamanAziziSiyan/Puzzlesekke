@@ -1,3 +1,10 @@
+<?php
+$menu = [
+    'panel' => 'پنل مدیریت',
+    'profile' => 'مشاهده پروفایل'
+];
+
+?>
 <div id="top-nav">
     <nav class="navbar navbar-default navbar-fixed-top custom-navbar-default ">
         <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
@@ -8,7 +15,7 @@
 
             <a href="index.php" class="navbar-brand">
                 <img src="img/7l.png" alt="" height="30" />
-                <span class="site-title">پنل مدیریت</span>
+                <span class="site-title"><?php echo $menu['panel']; ?></span>
             </a>
         </header>
         <!-- END LOGO SECTION -->
@@ -17,7 +24,7 @@
 
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <span class="label label-success">1</span>    <i class="icon-envelope-alt"></i>&nbsp; <i class="icon-chevron-down"></i>
+                    <span class="label label-success">1</span> <i class="icon-envelope-alt"></i>&nbsp; <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-messages" style="padding: 0">
 
@@ -27,7 +34,7 @@
                                 <img class="img-circle" width="35" height="35" src="img/gravatar.png">
                                 <span style="font-size: 12px">وحید صالحی</span>
                                 <span class="pull-left text-muted" style="margin-top: 10px">
-                                            <label class="label label-danger" style="font-size: 8px">مهم</label>
+                                    <label class="label label-danger" style="font-size: 8px">مهم</label>
                                     <!--<label class="label label-info" style="font-size: 8px">1</label>-->
                             </div>
                             <div style="margin: 10px 0;font-size: 13px;color: #aea5a9">
@@ -45,7 +52,7 @@
             <!--TASK SECTION -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <span class="label label-danger">5</span>   <i class="icon-tasks"></i>&nbsp; <i class="icon-chevron-down"></i>
+                    <span class="label label-danger">5</span> <i class="icon-tasks"></i>&nbsp; <i class="icon-chevron-down"></i>
                 </a>
 
                 <ul class="dropdown-menu dropdown-tasks">
@@ -154,7 +161,7 @@
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="../index.html"><i class="icon-circle-arrow-right"></i> بازگشت به سایت </a>
                     </li>
-                    <li><a href="#"><i class="icon-user"></i> مشاهده پروفایل </a>
+                    <li><a href="#"><i class="icon-user"></i> <?php echo $menu['profile']; ?> </a>
                     </li>
                     <li><a href="#"><i class="icon-gear"></i> تنظیمات </a>
                     </li>
