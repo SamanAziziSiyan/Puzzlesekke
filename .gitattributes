@@ -1,0 +1,5 @@
+# GitHub Linguist overrides
+# These repositories contain PHP source code. Force PHP classification
+# so PHP files are not heuristically classified as Hack.
+*.php linguist-language=PHP
+*.inc linguist-language=PHP
